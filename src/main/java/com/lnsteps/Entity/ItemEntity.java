@@ -1,4 +1,4 @@
-package com.lnsteps.Entity;
+package com.lnsteps.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,16 +7,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
-@Builder
+@NoArgsConstructor
+@Data // bundles toString(), getters and setters
 @Entity
 @Table(name = "Item")
 public class ItemEntity {
