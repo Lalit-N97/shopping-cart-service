@@ -1,4 +1,4 @@
-package com.lnsteps.business.bean;
+package com.lnsteps.cart.business.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
