@@ -2,13 +2,18 @@ package com.lnsteps.cart.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.lnsteps.cart.business.bean.ItemBean;
+import com.lnsteps.cart.dao.ItemDaoWrapper;
 
 @Service
 public class ShoppingCartServiceImpl implements ShoppingCartService{
-
+	
+	@Autowired
+	ItemDaoWrapper dao;
+	
 	@Override
 	public int add(ItemBean item) {
 		// TODO Auto-generated method stub
@@ -29,8 +34,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService{
 
 	@Override
 	public List<ItemBean> getAllItems() {
-		// TODO Auto-generated method stub
-		return null;
+		return dao.getAllItems();
 	}
 
 	@Override
