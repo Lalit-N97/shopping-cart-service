@@ -23,4 +23,13 @@ public class ItemDaoWrapper {
 		return beanList;
 	}
 	
+	public int add(ItemBean bean) {
+		ItemEntity entity = new ItemEntity();
+		BeanUtils.copyProperties(bean, entity);
+		System.out.print(entity.toString());
+		entity = repo.save(entity);
+		if(entity == null) return -1;
+		return 0;
+	}
+	
 }

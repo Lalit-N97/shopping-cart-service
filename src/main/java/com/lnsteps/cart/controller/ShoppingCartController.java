@@ -28,7 +28,7 @@ public class ShoppingCartController {
 	@RequestMapping(value = "add", method = RequestMethod.POST, produces = "application/json")
 //	@ResponseBody
 	public int add(@RequestBody ItemBean item) {
-		return 1;
+		return cartService.add(item);
 	}
 	
 }

@@ -17,7 +17,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService{
 	@Override
 	public int add(ItemBean item) {
 		// TODO Auto-generated method stub
-		return 0;
+		return dao.add(item);
 	}
 
 	@Override
