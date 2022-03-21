@@ -21,15 +21,21 @@ public class ShoppingCartServiceImpl implements ShoppingCartService{
 	}
 
 	@Override
-	public int remove(ItemBean item) {
+	public int updateQuantity(Long id) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int delete(ItemBean item) {
+	public int delete(Long id) {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	@Override
+	public ItemBean getItem(Long id) {
+		// TODO Auto-generated method stub
+		return dao.getItem(id);
 	}
 
 	@Override
